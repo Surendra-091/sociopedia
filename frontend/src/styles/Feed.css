@@ -1,0 +1,131 @@
+.feed-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f6f8;
+  height: 100vh;
+  padding: 20px 0;
+  overflow-x: hidden;
+}
+
+/* Sticky create-post box */
+.create-post-box {
+  background: #fff;
+  border: 2px solid #e3e3e3;
+  border-radius: 12px;
+  padding: 15px;
+  width: 100%;
+  max-width: 600px;
+  position: sticky;
+  top: 0; /* 🔹 keeps it visible always */
+  z-index: 20;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+}
+
+/* Scrollable post list */
+.feed-container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+  padding-bottom: 50px;
+  scroll-behavior: smooth;
+}
+.create-post-box:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.create-post-box textarea {
+  width: 100%;
+  min-height: 80px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  resize: none;
+  font-size: 15px;
+  outline: none;
+}
+
+.create-post-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.create-post-box button:hover {
+  background-color: #0056b3;
+}
+
+/* 🌟 Individual post card */
+.post-card {
+  background-color: #fff;
+  border: 1.5px solid #ddd;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+}
+
+.post-card:hover {
+  border-color: #007bff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.post-card h4 {
+  font-weight: 600;
+  color: #333;
+}
+
+.post-card p {
+  margin-top: 6px;
+  color: #444;
+}
+
+.post-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.like-btn {
+  background: none;
+  border: none;
+  color: #e0245e;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.like-btn:hover {
+  transform: scale(1.1);
+}
+.comment-section {
+  margin-top: 1rem;
+}
+
+.comment-section input {
+  width: 70%;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.comment-section button {
+  padding: 0.5rem 1rem;
+}
+
+.comments-list {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
