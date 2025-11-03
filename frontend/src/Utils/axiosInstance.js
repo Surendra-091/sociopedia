@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api", // backend URL
+  baseURL: "https://sociopedia-front-t7ge.onrender.com/api", // backend URL
 });
 
 // Automatically attach token to every request if available
